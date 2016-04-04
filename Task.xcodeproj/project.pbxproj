@@ -14,6 +14,7 @@
 		3AC21B461CB2640E00EEE03B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC21B441CB2640E00EEE03B /* LaunchScreen.storyboard */; };
 		3AC21B511CB2640E00EEE03B /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC21B501CB2640E00EEE03B /* TaskTests.swift */; };
 		3AC21B5C1CB2640E00EEE03B /* TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC21B5B1CB2640E00EEE03B /* TaskUITests.swift */; };
+		B23243069082ECE54D02C4F3 /* Pods_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE17517B79DBA8BF78B4A009 /* Pods_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		3AC21B571CB2640E00EEE03B /* TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC21B5B1CB2640E00EEE03B /* TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITests.swift; sourceTree = "<group>"; };
 		3AC21B5D1CB2640E00EEE03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC18BCAA040FB0D70263FDBC /* Pods-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Task/Pods-Task.debug.xcconfig"; sourceTree = "<group>"; };
+		BE17517B79DBA8BF78B4A009 /* Pods_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36F6C4932C2EC19D51AADC3 /* Pods-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Task/Pods-Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23243069082ECE54D02C4F3 /* Pods_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				3AC21B4F1CB2640E00EEE03B /* TaskTests */,
 				3AC21B5A1CB2640E00EEE03B /* TaskUITests */,
 				3AC21B391CB2640D00EEE03B /* Products */,
+				A09D68718D4981D5370B162F /* Pods */,
+				900C280AE18FE2D58931BA2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = TaskUITests;
 			sourceTree = "<group>";
 		};
+		900C280AE18FE2D58931BA2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE17517B79DBA8BF78B4A009 /* Pods_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A09D68718D4981D5370B162F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC18BCAA040FB0D70263FDBC /* Pods-Task.debug.xcconfig */,
+				C36F6C4932C2EC19D51AADC3 /* Pods-Task.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AC21B601CB2640E00EEE03B /* Build configuration list for PBXNativeTarget "Task" */;
 			buildPhases = (
+				DE422F2251F0C0621745B2ED /* Check Pods Manifest.lock */,
 				3AC21B341CB2640D00EEE03B /* Sources */,
 				3AC21B351CB2640D00EEE03B /* Frameworks */,
 				3AC21B361CB2640D00EEE03B /* Resources */,
+				79CAB26719F95B3EC14538B6 /* Embed Pods Frameworks */,
+				B50530479A824C4E03FE6063 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79CAB26719F95B3EC14538B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Task/Pods-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50530479A824C4E03FE6063 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Task/Pods-Task-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE422F2251F0C0621745B2ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AC21B341CB2640D00EEE03B /* Sources */ = {
@@ -400,6 +475,7 @@
 		};
 		3AC21B611CB2640E00EEE03B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC18BCAA040FB0D70263FDBC /* Pods-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task/Info.plist;
@@ -411,6 +487,7 @@
 		};
 		3AC21B621CB2640E00EEE03B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36F6C4932C2EC19D51AADC3 /* Pods-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task/Info.plist;
@@ -487,6 +564,7 @@
 				3AC21B621CB2640E00EEE03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC21B631CB2640E00EEE03B /* Build configuration list for PBXNativeTarget "TaskTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +573,7 @@
 				3AC21B651CB2640E00EEE03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC21B661CB2640E00EEE03B /* Build configuration list for PBXNativeTarget "TaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +582,7 @@
 				3AC21B681CB2640E00EEE03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
